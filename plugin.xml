@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-debuggable-webview" version="0.0.1">
+    <name>Debuggable Webview Plugin</name>
+
+    <description>An Android Cordova plugin that allows you to enable/disable the debuggable webview.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,debuggable,webview</keywords>
+    <repo>https://github.com/JouriFledderman/cordova-plugin-debuggable-webview.git</repo>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WebViewDebug" >
+                <param name="android-package" value="com.jourif.debuggable.WebViewDebug"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/WebViewDebug.java" target-dir="src/com/jourif/debuggable" />
+    </platform>
+</plugin>

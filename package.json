@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-debuggable-webview",
+  "version": "1.0.0",
+  "description": "An Android Cordova plugin that allows you to enable/disable the debuggable webview.",
+  "cordova": {
+    "id": "cordova-plugin-debuggable-webview",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JouriFledderman/cordova-plugin-debuggable-webview.git"
+  },
+  "keywords": [
+    "Cordova",
+    "Android",
+    "Debuggable",
+    "Webview",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Jouri Fledderman <jouri.fledderman@luminis.eu>",
+  "license": "MIT"
+}
