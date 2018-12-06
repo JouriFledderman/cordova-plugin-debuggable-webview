@@ -13,4 +13,4 @@ Add the following codeblock to your config.xml within the `<platform name="andro
 </config-file>
 ```
 
-when you do not want to enable debugging in your apk (for example when you create a production release), make sure you set the `android:value` for the `WebViewDebug` property to false.
+when you want to disable debugging in your apk (for example when you create a production release), make sure you set the `android:value` for the `WebViewDebug` property to false.
